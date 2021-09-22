@@ -14,11 +14,11 @@ Simple platform to test your API and make the response view with following extra
 - [MariaDB](https://mariadb.org/) mysql  Ver 15.1 Distribution 10.4.17-MariaDB
 - [Php](http://www.php.net) version: 7.3.25
 
-##Requirement:
+## Requirement:
 - Php version 7.x.x
 - MariaDB 10.x.x
 
-##Installation:
+## Installation:
 - Make a directory
 - Run:
 <pre>$ git clone https://github.com/suzondas/Make-API-View.git</pre>
@@ -30,7 +30,8 @@ Simple platform to test your API and make the response view with following extra
  DB_PORT=3306
  DB_DATABASE=[database_name]
  DB_USERNAME=[username]
- DB_PASSWORD=[password]</pred>
+ DB_PASSWORD=[password]
+ </pre>
 <pre>$ php artisan migrate</pre>
 <pre>$ php artisan key:generate</pre>
 <pre>$ php artisan serve</pre>
