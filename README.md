@@ -1,6 +1,6 @@
 
 ## Make-API-View
-<a target="_blank" href="https://preview.uxpin.com/eeda7afa952758ef327655911bd93cae8b9f37b7#/pages/105258367/simulate/no-panels?mode=i"><img src="https://i.postimg.cc/z8LKL6Fh/make-api-view.png" width="500px" /></a><br>
+[![make-api-view.png](https://i.postimg.cc/437WYxfx/make-api-view.png)](https://postimg.cc/nsx45Z9y)<br>
 <h3>Simple platform to test your API and make the response view with following extraordinary options</h3>
 
 - Test API with Parameter(s)
