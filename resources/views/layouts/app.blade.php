@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'READY API VIEW') }}</title>
-    <script>var serverURI ="<?php echo request()->getSchemeAndHttpHost();?>"</script>
+    <script>var serverURI ="<?php echo base_path();?>"</script>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 @yield('javascript')
