@@ -10,7 +10,7 @@ const app = new Vue({
     },
     mounted() {
         var self = this;
-        axios.get('/checkUserGivenValue/' + id).then(function (res) {
+        axios.get('checkUserGivenValue/' + id).then(function (res) {
             console.log(res.data)
             if (res.data.userGivenValue === true) {
                 self.checkUserGivenValue = true;
@@ -51,7 +51,7 @@ const app = new Vue({
             submitUserGivenValues: function () {
                 let self = this;
                 self.dataLoaded = false;
-                axios.post('/submitUserGivenValues/' + id, self.params).then(function (res) {
+                axios.post('submitUserGivenValues/' + id, self.params).then(function (res) {
                     console.log(res.data)
                     self.checkUserGivenValue = false;
                     self.data = JSON.parse(res.data.data);
