@@ -9,10 +9,14 @@
 
                 {{--If user set any key's value should be given at runtime--}}
                 <div v-if="checkUserGivenValue===true">
-                    Provide Teacher's Index Number:
+                    Provide Value for following Parameter(s):
                     <table class="table table-bordered">
+                        <tr>
+                            <td>Key</td>
+                            <td>Value</td>
+                        </tr>
                         <tr v-for="item in params">
-                            <td>Index Number</td>
+                            <td>@{{ item.key }}</td>
                             <td><input type="text" v-model="item.value"/></td>
                         </tr>
                     </table>
