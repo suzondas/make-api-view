@@ -16,10 +16,10 @@
                     <div class="card-header">Create New API</div>
                     <div class="card-body">
                             API URL: <input type="text" class="form-control w-50" v-model="apiData.url"/><br>
-                            Type: <input type="radio" v-model="apiData.type" value="token"/> Token &nbsp;&nbsp;
+                            {{--Type: <input type="radio" v-model="apiData.type" value="token"/> Token &nbsp;&nbsp;
                             <input type="radio" v-model="apiData.type" value="resource"/>
                             Resource<br><br>
-                            Parameter:<br>
+                            Parameter:<br>--}}
                             <table class="table table-bordered table-striped">
                                 <tr class="bg-primary">
                                     <th>Sl</th>

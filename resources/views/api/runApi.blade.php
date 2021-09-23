@@ -9,14 +9,9 @@
 
                 {{--If user set any key's value should be given at runtime--}}
                 <div v-if="checkUserGivenValue===true">
-                    Provide Value for following Parameter(s):
                     <table class="table table-bordered">
-                        <tr>
-                            <td>Key</td>
-                            <td>Value</td>
-                        </tr>
                         <tr v-for="item in params">
-                            <td>@{{ item.key }}</td>
+                            <td>Index Number</td>
                             <td><input type="text" v-model="item.value"/></td>
                         </tr>
                     </table>
@@ -27,6 +22,7 @@
                 {{--Else--}}
                 <div v-if="checkUserGivenValue===false">
                     Response:
+                    {{--Date of Birth: <span>@{{ data.DateOfBirth }}</span> | Date of PRL: <span>@{{data.DateOfBirth | moment("add", "7 days") }}</span>--}}
                     <table class="table table-bordered">
                         <tr class="bg-primary text-white font-weight-bold">
                             <td>Sl</td>
@@ -34,10 +30,14 @@
                             <td>Value</td>
                         </tr>
                         {{--@todo: Should use thrid party plugin for showing JSON value in nested table format--}}
+
                         <tr v-for="(value, key, index) in data">
                             <td class="font-weight-bold">@{{ index+1 }}</td>
                             <td class="font-weight-bold">@{{ key }}</td>
-                            <td class="bg-white">@{{ value }}</td>
+                            <td v-if="key==='EIIN'" class="font-weight-bold"><a
+                                        :href="'http://163.47.156.104:8080/BANBEISR/instituteSearch3Dtls.do?eiin='+value"
+                                        target="_blank">@{{ value }}</a></td>
+                            <td v-else class="bg-white">@{{ value }}</td>
                         </tr>
                     </table>
                 </div>

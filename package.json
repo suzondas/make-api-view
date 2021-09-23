@@ -25,6 +25,8 @@
         "vue-template-compiler": "^2.6.12"
     },
     "dependencies": {
-        "vue-json-to-table": "^1.0.7"
+        "moment": "^2.29.1",
+        "vue-json-to-table": "^1.0.7",
+        "vue-moment": "^4.1.0"
     }
 }
