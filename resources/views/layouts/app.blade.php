@@ -9,6 +9,7 @@
 
     <title>{{ config('app.name', 'READY API VIEW') }}</title>
     <script>var serverURI ="<?php echo URL::to('/api');?>"</script>
+    {{--<script>var serverURI ="<?php echo URL::to('/');?>"</script>--}}
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 @yield('javascript')
@@ -16,7 +17,11 @@
 <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <style>
+        .table th, .table td{
+            padding: 0.35rem !important;
+        }
+    </style>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>

@@ -40,6 +40,8 @@
                             <td v-else class="bg-white">@{{ value }}</td>
                         </tr>
                     </table>
+                    <input type="button" class="btn btn-success" onclick="window.print()" value="Print"/>
+
                 </div>
                 {{--End--}}
             </div>
