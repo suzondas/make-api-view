@@ -55,7 +55,7 @@ const app = new Vue({
                 var self = this;
                 axios.post(serverURI+'/saveApi', self.apiData).then(function (res) {
                     alert('API created successfully!')
-                    window.location.href = '/home';
+                    window.location.href = serverURI+'/home';
                 }).catch(function (err) {
                     alert('Something went wrong!')
                 });
