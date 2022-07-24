@@ -4,6 +4,7 @@
 <h3>Simple platform to test your API and make the response view with following extraordinary options</h3>
 
 - Test API with Parameter(s)
+- Save Your API
 - Autofill Parameter(s) Value from another API response
 - Ask Parameter(s) Value at run time
 - Show the response as HTML table
