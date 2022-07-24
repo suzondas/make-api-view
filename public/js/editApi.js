@@ -50,7 +50,7 @@ const app = new Vue({
                 var self = this;
                 axios.post(serverURI +'/updateApi/'+apiId, self.apiData).then(function (res) {
                     alert('API Updated successfully!')
-                    window.location.href = '/home';
+                    window.location.href = serverURI+'/home';
                 }).catch(function (err) {
                     alert('Something went wrong!')
                 });
