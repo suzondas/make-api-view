@@ -10,7 +10,7 @@ const app = new Vue({
     },
     mounted() {
         var self = this;
-        axios.get('/getApi/' + apiId).then(function (res) {
+        axios.get(serverURI+'/getApi/' + apiId).then(function (res) {
             console.log(res.data)
             self.apiData = res.data.apiData
             self.reference_apis = res.data.reference_apis
@@ -48,7 +48,7 @@ const app = new Vue({
             },
             update: function () {
                 var self = this;
-                axios.post('/updateApi/'+apiId, self.apiData).then(function (res) {
+                axios.post(serverURI+'/updateApi/'+apiId, self.apiData).then(function (res) {
                     alert('API Updated successfully!')
                     window.location.href = '/home';
                 }).catch(function (err) {
